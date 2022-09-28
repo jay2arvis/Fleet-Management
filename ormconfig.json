@@ -1,0 +1,18 @@
+{
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "190tz1995",
+    "database": "tomis",
+    "entities": [
+        "dist/**/*.entity{.ts,.js}",
+        "src/**/*.entity{.ts,.js}"
+    ],
+    "migrations": ["src/database/migrations/*.ts"],
+    "cli": {
+        "migrationsDir": "src/database/migrations"
+    },
+    "synchronize": true,
+    "logging": ["error", "warn"]
+}
